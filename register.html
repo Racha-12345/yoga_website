@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yoga Class Registration</title>
+        <style>
+             * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Merriweather', sans-serif;
+        }
+        body {
+            background-color: beige;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+        .form-container {
+            background: rgba(255, 255, 255, 0.9);
+            width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .form-container h1 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #5a5a5a;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-size: 16px;
+            color: #555;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .form-container p {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+
+        .form-container p a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .form-container p a:hover {
+            text-decoration: underline;
+        }
+        .radio-group {
+            display: flex;
+            align-items: center;
+         
+        }
+       
+        
+        </style>
+    </head>
+    <body>
+        <div class="form-container">
+            <h1>Register for Yoga Class</h1>
+            <form>
+                <label for="name">Full Name :</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br>
+            <label for="email">Email Address :</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+            <label for="phone">Phone Number :  </label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br>
+            <div class="radio-group">
+                <input type="radio" id="online" name="class_mode" value="Online" required>
+                <label for="online">Online</label>
+                
+                <input type="radio" id="offline" name="class_mode" value="Offline" required>
+                <label for="offline">Offline</label>
+            </div>
+            <label for="yoga_type">Preferred Yoga Style</label>
+            <select id="yoga_type" name="yoga_type" required>
+                <option value="">Select a style</option>
+                <option value="hatha">Hatha Yoga</option>
+                <option value="vinyasa">Vinyasa Yoga</option>
+                <option value="ashtanga">Ashtanga Yoga</option>
+                <option value="kundalini">kandalini Yoga</option>
+            </select><br>
+            <label for="timing">Preferred Class Timing</label>
+            <select id="timing" name="timing" required>
+                <option value="">Select a time</option>
+                <option value="5am-6am">5:00 AM - 6:00 AM</option>
+                <option value="6pm-7pm">6:00 PM - 7:00 PM</option>
+            </select><br>
+           <button type="submit">Register </button>
+            
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=\, initial-scale=1.0">
+   <title>patanjali yoga</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+      body {
+         background-color: #F2EFEA;
+         background-size: cover;
+         overflow-y: scroll;
+      
+      }
+
+      .li1,
+      .drop1 {
+         display: inline;
+         color: black;
+      }
+
+      a {
+         text-decoration: none;
+         color: #8E8E8E;
+         margin-left: 55px;
+         font-size: 15px;
+      }
+
+      nav {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+         padding: 5px 15px;
+         background-color: #F2EFEA;
+         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+         position: sticky;
+         top:0px;
+         z-index:1000;
+
+      }
+
+      .TandC {
+         display: none;
+         position: absolute;
+         left: 750px;
+         z-index: 100;
+         border: 0.2px solid black;
+
+
+
+      }
+
+      .TandC li {
+         padding: 5px;
+         background-color: white;
+         width: 80px;
+
+      }
+
+      .drop1:hover .TandC {
+         display: block;
+      }
+
+
+      .serve {
+         display: none;
+         position: absolute;
+         left: 900px;
+         border: 0.2px solid black;
+         border-radius: 10px;
+         background-color:white;
+         
+        
+         
+      }
+
+     
+      .drop2:hover .serve {
+         display: block;
+      }
+      .drop2{
+         padding-bottom: 100px;
+         height: 300px;
+      }
+      .mainimage {
+         position: absolute;
+         top: 200px;
+         left: 800px;
+         width: 650px;
+         height: 400px;
+         border: 0px;
+         border-radius: 30px;
+      }
+
+      .title1 {
+         font-family: 'newsreader', serif;
+         color: #8E8E8E;
+         position: absolute;
+         left: 0px;
+       }
+
+
+      button {
+         outline: none;
+         cursor: pointer;
+         border: none;
+         padding: 0.9rem 2rem;
+         margin: 0;
+         font-family: inherit;
+         font-size: inherit;
+         position: relative;
+         display: inline-block;
+         letter-spacing: 0.05rem;
+         font-weight: 700;
+         font-size: 17px;
+         border-radius: 500px;
+         overflow: hidden;
+         background: orange;
+         color: ghostwhite;
+      }
+
+      button span {
+         position: relative;
+         z-index: 10;
+         transition: color 0.4s;
+      }
+
+      button:hover span {
+         color: black;
+      }
+
+
+      button::before,
+      button::after {
+         position: absolute;
+         top: 0px;
+         left: 0px;
+         width: 100%;
+         height: 100%;
+         z-index: 0;
+      }
+
+      button::before {
+         content: "";
+         background: orange;
+         width: 120%;
+         left: -10%;
+         transform: skew(30deg);
+         transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+         color: orange;
+      }
+
+      button:hover::before {
+         transform: translate3d(100%, 0, 0);
+      }
+
+      .content1 {
+         color: orange;
+         padding: 3px;
+         position: absolute;
+         left: 180px;
+         top: 200px;
+      }
+
+      .TandC li {
+         list-style-type: none;
+      }
+
+      .serve li {
+         list-style-type: none;
+         padding-left:0px;
+      }
+      /* .serve a{
+  padding-left: -30px;
+      } */
+
+      .date {
+         border: 2px solid white;
+         border-radius: 10px;
+         width: 120px;
+         height: 180px;
+         position: absolute;
+         left: 200px;
+         top: 720px;
+         background-color: white;
+         padding-left: 60px;
+         padding-top: 10px;
+
+      }
+
+      .time {
+         border: 2px solid white;
+         border-radius: 10px;
+         width: 120px;
+         height: 180px;
+         position: absolute;
+         left: 500px;
+         top: 720px;
+         background-color: white;
+         padding-left: 60px;
+         padding-top: 10px;
+      }
+
+      .language {
+         border: 2px solid white;
+         border-radius: 10px;
+         width: 120px;
+         height: 180px;
+         position: absolute;
+         left: 200px;
+         top:980px;
+         background-color: white;
+         padding-left: 60px;
+         padding-top: 10px;
+      }
+
+      .level {
+         border: 2px solid white;
+         border-radius: 10px;
+         width: 120px;
+         height: 180px;
+         position: absolute;
+         left: 500px;
+         top:980px;
+         background-color: white;
+         padding-left: 60px;
+         padding-top: 10px;
+      }
+
+      .fix {
+         width: 350px;
+         height: 450px;
+         position: absolute;
+         left: 1000px;
+         top: 720px;
+         background-color: white;
+         padding-left: 30px;
+         padding-top: 5px;
+         border: 0px;
+         border-radius: 20px;
+
+      }
+
+      .but1 {
+         width: 320px;
+      }
+
+      table{
+         border: 0.5px solid grey;
+         border-radius:14px;
+         background-color: white;
+         position: absolute;
+         left:100px;
+         top: 1250px;
+         padding-top: 40px;
+
+      }
+      table td{
+         padding:50px;
+      }
+
+      .serve {
+         position: absolute;
+         display: none;
+
+      }
+
+   
+      .mainul{
+         margin-left:200px;
+      }
+      .serve li:hover{
+         background-color:orchid;
+         size: 20px;
+      }
+   </style>
+</head>
+
+<body>
+   <nav class="mainnav" style="position:fixed; top:0px;">
+
+      <h1 class="title1">YOGA MOVEMENT</h1>
+      <ul class="mainul">
+         <li class="li1"><a href="#"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;HOME</a></li>
+         <li class="li1"><a href="#"><i class="fa-sharp fa-solid fa-circle-info"></i>&nbsp;&nbsp;ABOUT</a></li>
+         <li class="drop1"><a href="#"><i class="fa-sharp-duotone fa-regular fa-book"></i>&nbsp;&nbsp;TRAINING&nbsp;&&nbsp;COURSES&nbsp;&nbsp;</a>
+
+
+         </li>
+         <li class="li1 drop2"><a href="#">SERVICES&nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></a>
+            <ul class="serve">
+               <li><a href="#">ONLINE</a></li>
+               <li><a href="#">OFFLINE</a></li>
+            </ul>
+         </li>
+
+         <li class="li1"><a href="#">BLOG</a></li>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <li class="li1 register1">
+            <button> <span><a href="register.html">Register Now</a></span>
+            </button>
+         </li>
+
+      </ul>
+   </nav>
+
+
+   <img src="yoga1.webp" class="mainimage" src="error">
+
+   <div class="content1">
+      <p>
+         <font size="30px">21-Day</font><br>
+         <font size="65px">
+            YOGA SADHANA<br>
+            BEGINNER</font>
+      </P>
+      <p>
+         <font color="grey" size="30px">Take Charge Of your Joy</font>
+      </p>
+      <button> <span><a href="register.html">Register Now</a></span>
+      </button>
+
+
+      <p>
+         <font color="grey" size="5px">1,00,000+ people have already attended</font>
+      </p>
+
+      </ul>
+   </div>
+
+   </div>
+   <div class="date">
+      <img src="date1.png" alt="error" width="50px" height="60px">
+      <p>
+         <font color="grey">Start Date</font>
+      </p>
+      <p>
+         <font color="orange">15 Dec 2024</font>
+      </p>
+
+
+   </div>
+   <div class="time">
+      <img src="time.png" alt="error" width="60px" height="60px">
+      <p>
+         <font color="grey">Timings</font>
+      </p>
+      <p>
+         <font color="orange">6:00-7:00AM</font>
+      </p>
+      <p>
+         <font color="orange">7:00-8:00AM</font>
+      </p>
+
+
+   </div>
+   <div class="language">
+      <img src="language.png" alt="error" width="60px" height="60px">
+      <p>
+         <font color="grey">Language</font>
+      </p>
+      <p>
+         <font color="orange">Hindi,English</font>
+      </p>
+   </div>
+   <div class="level">
+      <img src="level.png" alt="error" width="60px" height="60px">
+      <p>
+         <font color="grey">Level</font>
+      </p>
+      <p>
+         <font color="grey">Beginner</font>
+      </p>
+   </div>
+   <div class="fix">
+      <h1>
+         <font color="orange">Yoga Sadhana Beginner</font>
+      </h1>
+      <p>
+         <font color="grey" size="5px"><i class="fa-solid fa-timer"></i>15 Dec 2024 - 06 Jan 2025</font>
+      </p>
+      <p>
+         <font color="grey" size="5px">5:00-6:00AM/6:00-7:00AM</font>
+      </p>
+      <p>
+         <font color="grey" size="5px">Contribution:Rs&nbsp;449</font>
+      </p>
+      <button class="but1"> <span>Register Now</span>
+      </button>
+      <p>
+         <font color="grey" size="5px"><i class="fa-solid fa-caret-down"></i>&nbsp;Sleep better and eat healthier</font>
+      </p>
+      <p>
+         <font color="grey" size="5px"><i class="fa-solid fa-caret-down"></i>&nbsp;activation of all muscle groups
+         </font>
+      </p>
+      <p>
+         <font color="grey" size="5px"><i class="fa-solid fa-caret-down"></i>&nbsp;High energy levels and much more
+         </font>
+      </p>
+   </div>
+
+   <div>
+      <table width="1200px" height="400px">
+         <tr>
+            <th colspan="2">
+               <font color="orange" size="20px">What Included?</font>
+            </th>
+         </tr>
+         <tr>
+            <td><img src="record.jpg" alt="error" width="200px" height="200px" border-radius="12px"></td>
+            <td>1. 90 minute recorded session every morning
+               Every session will include 20 minutes of Yoga philosophy explained in an applicable way to help you take
+               control of your thoughts & emotions. This will be followed by 60 minutes of step by step asana practice.
+               The practice will include asanas both from Hatha and Ashtanga style. You will also follow guided meditations & pranayama. We will end the session with 10 minutes of practical healthy habits that will help you change your food and lifestyle to reach your peak health. You will learn the benefits of cleansing practices like sunbathing and fasting along with food habits like juicing and having a wholesome diet.
+            </td>
+         </tr>
+         <tr>
+            <td><img src="book.jpg" alt="error" width="200px" height="200px"></td>
+            <td>2. Deep Yogic Knowledge
+               Most people feel lost, alone & stressed in life. The Yogic philosophy deeply understands the human psychology and talks about simple yet powerful tools to navigate the ups and downs of life
+               We will dive into the Ashtanga philosophy and learn about the 8 limbs of yoga these are beautiful values to live by. This is explained in a simple and fun way through stories, analogies and activities!</td>
+            </tr>
+         <tr><td>
+        <img src="meal.webp" alt="error" width="200px" height="200px" border="0px" border-radius="8px">
+         </td>
+      <td>
+         3. Meal Plans & Diet
+         Satvic foods are not only conducive to your yoga practice but also have the power to prevent and heal your diseases. Every day we will help you make a healthy food addition to your life.
+         This workshop is designed in a way that you absorb the knowledge without getting overwhelmed & can actually implement it in your life. Don’t worry, Satvic meals are neither boring nor tasteless! This plant based power packed way of eating will bring you tons of energy each day!
+      </td>
+      </tr>
+
+      </table>
+   </div>
+
+
+
+</body>
+
+</html>

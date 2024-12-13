@@ -1,0 +1,380 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"content="width=device-width,initial-scale=1.0">
+<title>online</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Lugrasimo&family=Pattaya&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+
+.title1{
+font-family:'newsreader',serif;
+color:#8E8E8E;
+position: absolute;
+left:15px;
+}    
+.serve{
+display: none;
+position:absolute;
+left: 1000px;
+z-index: 100;
+border: 0.2px solid black;
+}
+.serve{
+padding:2px;
+margin-left:100px;
+margin-top:-10px;
+position:sticky;
+z-index:100;
+background-color:powderblue;
+}
+.drop2:hover .serve{
+display:block;
+position:absolute;
+left:800px;
+top:60px;
+}
+nav{
+display: flex;
+justify-content: center;
+align-items: center;
+padding:5px 15px; 
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+a{
+text-decoration: none;
+color:#8E8E8E;
+margin-left:55px; 
+font-size:15px;
+}
+.li1,.drop1{
+display: inline;
+color:black;
+}          
+button {
+outline: none;
+cursor: pointer;
+border: none;
+padding: 0.9rem 2rem;
+margin: 0;
+font-family: inherit;
+font-size: inherit;
+position: relative;
+display: inline-block;
+letter-spacing: 0.05rem;
+font-weight: 700;
+font-size: 17px;
+border-radius: 500px;
+overflow: hidden;
+background:orange;
+color: ghostwhite;
+margin-left:770px;
+margin-top:-15px;
+}
+button span {
+position: relative;
+z-index: 10;
+transition: color 0.4s;
+}
+button:hover span {
+color: black;
+}
+button::before,
+button::after {
+position: absolute;
+top:0px;
+left:0px;
+width: 100%;
+height: 100%;
+z-index: 0;
+}
+button::before {
+content: "";
+background:orange;
+width: 120%;
+left: -10%;
+transform: skew(30deg);
+transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1)
+color:orange;
+}
+button:hover::before {
+transform: translate3d(100%, 0, 0);
+}
+.serve li{
+list-style-type: none;
+}
+
+
+.main{
+color:blue;
+font-size:40px;
+font-family: "Poppins", sans-serif;
+position:relative;
+left:200px;
+}
+p{
+color:light grey;
+font-size:25px;
+position:relative;
+left:350px;
+}
+img{
+width:430px;
+height:230px;
+position:relative;
+left:390px;
+}
+.p1{
+font-size:25px;
+position:relative;
+left:280px;
+top:40px;
+}
+.p2{
+font-size:25px;
+position:relative;
+left:280px;
+}
+.train{
+color:blue;
+font-size:35px;
+position:relative;
+left:470px;
+}
+.p3{
+font-size:25px;
+position:relative;
+left:250px;
+}
+.p4{
+color:lightblue;
+position:relative;
+left:200px;
+}
+.p5{
+color:blue;
+position:relative;
+left:220px;
+top:-20px;
+}
+.img1{
+position:relative;
+left:120px;
+}
+.p6{
+color:lightblue;
+position:relative;
+left:840px;
+top:-360px;
+}
+.p7{
+color:blue;
+position:relative;
+left:870px;
+top:-380px;
+}
+.img2{
+position:relative;
+left:730px;
+top:-370px;
+}
+.online{
+color:purple;
+font-size:30px;
+position:relative;
+left:350px;
+top:-350px;
+}
+.img3{
+width:600px;
+height:250px;
+position:relative;
+left:450px;
+top:-340px;
+}
+.p8{
+font-size:25px;
+position:relative;
+left:350px;
+top:-310px;
+}
+.course{
+font-size:25px;
+position:relative;
+top:-300px;
+left:100px;
+}
+.p9{
+font-size:20px;
+position:relative;
+left:0px;
+top:-20px;
+}
+.time{
+font-size:20px;
+position:relative;
+left:0px;
+top:-10px;
+}
+.zoom{
+font-size:20px;
+position:relative;
+left:0px;
+top:-10px;
+}
+h4{
+color:orange;
+}
+.list{
+font-size:20px;
+}
+
+
+
+footer {
+    background-color:black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 0px;
+}
+.lastclass {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    max-width: 85%;
+    margin: 0 auto;
+    padding-bottom: 0px;
+}
+.contact, .items, .followus {
+    flex: 1; 
+    margin: 10px; 
+    min-width: 200px; 
+}
+.contact p {
+font-size:18px;
+margin-left:-15px;
+margin: 5px 0; 
+}
+.items a, .followus a {
+    display: inline-block;
+    margin: 5px;
+    color: #fff; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+.followus a i {
+font-size: 24px;
+}
+.copy{
+font-size:10px;
+margin-left:200px;
+}
+
+
+</style>
+</head>
+<body>
+
+<nav class="mainnav">   
+<h1 class="title1">YOGA MOVEMENT</h1>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ul class="mainul">
+<li class="li1"><a href="#"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;HOME</a></li>
+<li class="li1"><a href="#"><i class="fa-sharp fa-solid fa-circle-info"></i>&nbsp;&nbsp;ABOUT</a></li>
+<li class="drop1"><a href="#">TRAINING&nbsp;&&nbsp;COURSES&nbsp;&nbsp;</a>
+</li>
+<li class="li1 drop2"><a href="#">SERVICES&nbsp;&nbsp;<i class="fa fa-angle-down"></i></a>
+<ul class="serve">
+<li><a href="#"><b>ONLINE</b></a></li>
+<li><a href="#"><b>OFFLINE</b></a></li>
+</ul>
+</li>
+<li class="li1"><a href="#">BLOG</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<li class="li1 register1">
+<button> <span>Register Now</span>
+</button></li>
+</ul>
+</nav>
+
+
+
+<h1 class="main">Welcome to Online Yoga Program</h1>
+<p>Our name says it all: we're all about habit Building</p>
+<img src="https://assets.habit.yoga/habuildassets/hb-about.png" class="img">
+<p class="p1">We blend the best of old-school knowledge with modern tricks to help ou from<br>long-losting healthy habits.While may pepole want to form a regular exercise<br>routine, only afraction of us succeed in doing so.We're here to bridge that gap!</p>
+<br><br>
+<p class="p2">Join"Yoga Everyday,"dedicated to building a healthy habit of Yoga and "Dance &<br>Strength" an invigorating dance cardio workout that'll have you eagerly waiting for<br>your next session.</p>
+<br><br>
+<h2 class="train">Meet Your Trainers</h2>
+<p class="p3">Our team of world-class instrctors will empower you to grow and achieve all of Your<br>fitness and welllness goals.</p>
+<br>
+<p class="p4">Yoga Everyday with</p>
+<p class="p5">Saurabh Bothra</p>
+<img src="https://assets.habit.yoga/habuildassets/Saurabh-Bothra-trainer.webp" class="img1">
+<p class="p6">Dance and Strength with</p>
+<p class="p7">Trishala Bothra</p>
+<img src="https://assets.habit.yoga/habuildassets/Trishala-trainer.webp" class="img2">
+<br><br>
+<h2 class="online">Access to free Resources</h2>
+<img src="https://assets.habit.yoga/habuildassets/free-resources.webp" class="img3">
+<p class="p8">Access to Free Resources-Get access to several of our free programs and<br> resources when you sign up.</p>
+<div class="course">
+<h2>Online Courses</h2>
+<h6>Online Regular :</h6>
+<p class="p9">Yoga sessions: Rediscover Rejuvenate Relax</p>
+<h5>Join our online yoga program to evoke your inner<br>self</h5>
+<h4>Timings:</h4>
+<p class="time">Morning:5AM-6AM<br>Evening :6PM-7PM</p>
+<h4>Sessions:</h4>
+<p class="zoom">Live group class on Zoom</p>
+<h4>Fees:</h4>
+<h6>Rs. 3000/Month<br>
+    Rs. 7500/3 Months<br>
+    Rs. 11000/6 Months
+<h4>Prerequisite:</h4>
+<ul type:"disc">
+<div class="list">
+<li>Mobile Phone or Laptop</li>
+<li>Stable internet connection</li>
+<li>Quiet practice space for lectures</li>
+<li>Yoga Mat</li>
+<li>Zeal to learn and practice</li>
+<li>Smile</li>
+</div>
+</ul>
+</div>
+
+
+<footer>
+<div class="lastclass">
+<div class="items">
+                    <a href="home.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="training and courses.html">Training and Courses</a>
+                    <a href="services.html">Services</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contactus.html">Contact Us</a> 
+</div>
+<div class="followus">
+                    <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="x.com>"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="telegram.com"><i class="fa-brands fa-telegram"></i></a>
+</div>
+<div class="contact">
+<p><b>phone:</b>+91-9392388544</p>
+<p><b>email:</b>yogamovement@gmail.com</p>
+</div>
+<p class="copy"> © 2024 Yoga With Adriene, LLC  </p>
+</div>
+</footer>     
+
+
+</body>
+</html>

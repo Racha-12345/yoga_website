@@ -1,0 +1,438 @@
+.video-vac{
+    position: absolute;
+    left: 0px;
+    top:1px;
+}
+.video-vac video{
+    position: absolute;
+    transform: translate(0%,-113px);
+    z-index:-1;
+}
+.matter{
+    z-index: 1;
+    color:white;
+    font-size: 35px;
+    font-weight: 900px;
+    margin-left:70px;
+    margin-top:290px;
+}
+.bottom_matter{
+    font-size: 30px;
+
+}
+.Explore-btn{
+    border:none;
+    font-size: 20px;
+    padding-left:40px;
+    padding-right: 40px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    font-weight: 900px;
+
+}
+li{
+    display: inline;
+    font-size: 23px;
+}
+ul{
+    padding-left: 650px;
+}
+a{
+    text-decoration: none;
+    color:white;
+    padding: 20px;
+}
+header{
+    border:1px solid transparent;
+    margin-top:-680px;
+    background-color: transparent;
+}
+header:hover{
+    background-color: rgba(255, 255, 255, 0.282)
+}
+.explore-name{
+    color:black;
+}
+.home-down{
+    padding-top:800px;
+}
+.thats-new{
+    border: none;
+    position: absolute;
+    top:1015px;
+    width:800px;
+    height: 698px;
+    /* margin-top: -500px; */
+    background-color: rgba(0, 0, 0, 0.20);
+    z-index:1;
+}
+.thats-new:hover{
+    background-color: rgba(0, 0, 0, 0.50);
+
+}
+.explore-thats-new-btn{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    background-color: transparent;
+}
+.explore-thats-new-btn:hover{
+    border:1px solid white;
+
+}
+
+.explore-thats-new-text{
+    color:white;
+    font-size: 16px;
+}
+.explore-thats-new-text:hover{
+    color:rgba(255, 255, 255, 0.801);
+
+}
+.thats-new-matter{
+    color:white;
+    padding-left:100px;
+    padding-top:200px;
+    font-size: 27px;
+}
+.thats-new-matter:hover{
+    color:rgba(255, 255, 255, 0.602);
+
+}
+.Tourists{
+
+    display: flex;
+    height: 100px;
+    width:300px;
+    justify-content: space-between;
+}
+
+.tours{
+    padding:20px;
+    border-radius: 50px;
+}
+.tours:hover{
+    transform: scale(1.10);
+    z-index:-1;
+}
+
+
+.oneimage{
+    margin-left: 70px;
+    margin-top:290px;
+    z-index: 1;
+    color:white;
+
+}
+
+.secondimage{
+    margin-left: 550px;
+    margin-top:-180px;
+    z-index: 1;
+    color:white;
+
+}
+
+.thirdimage{
+    margin-left:1030px;
+    margin-top:-180px;
+    z-index: 1;
+    color:white;
+
+}
+.image-para{
+    margin-left:-20x;
+    margin-top:-30px;
+    font-size: 20px;
+}
+
+
+
+.event{
+
+margin-top: 80px;
+z-index: -1;
+
+}
+
+.eventtext{
+
+position: absolute;
+margin-top : -700px;
+margin-left : 600px;
+}
+
+.h1k{
+
+font-size: 40px;
+}
+
+.smalltext{
+
+margin-left: 20px;
+font-size : 25px;
+margin-top : -20px;
+color : grey;
+}
+.event1{
+
+padding : 20px;
+
+}
+
+.event img{
+
+border-radius: 20px;
+transition: transform 0.9s ease-in-out;
+}
+
+.event img:hover{
+
+transform : scale(1.1);
+
+}
+
+.p123{
+
+margin-top: -580px;
+margin-left : 50px;
+z-index: 1;
+
+}
+
+.p1{
+
+color : white;
+font-size: 25px;  
+
+}
+.p2{
+
+color : rgb(251,158,8);
+font-size: 30px;
+margin-top: -20px;
+}
+
+.p3{
+
+margin-top: 420px;
+font-size : 35px;
+color : white;
+margin-left : 120px;
+
+}
+
+.p456{
+
+margin-top: -580px;
+margin-left : 540px;
+z-index: 1;
+}
+.p4{
+
+color : white;
+font-size: 25px;  
+
+}
+
+.p5{
+
+color : rgb(251,158,8);
+font-size: 30px;
+margin-top: -20px;
+}
+
+.p6{
+
+margin-top: 420px;
+font-size : 35px;
+color : white;
+margin-left : 100px;
+
+}
+
+.p789{
+
+margin-top: -560px;
+margin-left : 1030px;
+z-index: 1;
+}
+
+.p7{
+
+color : white;
+font-size: 25px;  
+
+}
+
+.p8{
+
+color : rgb(251,158,8);
+font-size: 30px;
+margin-top: -20px;
+}
+
+.p9{
+
+margin-top: 440px;
+font-size : 35px;
+color : white;
+margin-left : 100px;
+
+}
+.sceneray{
+    position: relative;
+    top:150px;
+    width: 100%;
+    height: 100%;
+}
+.sceneray video{
+    position: absolute;
+    /* transform: translate(0%,-113px); */
+    z-index:-1;
+    object-fit: cover;
+}
+.container-beach{
+    margin-left: 967px;
+    margin-top:679px;
+    padding:40px;
+    width: 400px;
+    background-color:rgba(255, 255, 255, 0.214);
+    border:none;
+    color:white;
+
+}
+
+.beach-way{
+    position: absolute;
+    z-index:-1;
+    
+}
+.beach-btn{
+    border-radius: 10px;
+    padding:8px;
+    margin-left:20px;
+    border:none;
+}
+.beach-btn:hover{
+    color:orange;
+}
+.beach-head{
+    position:absolute;
+    top:2600px;
+    left:450px;
+}
+.last{
+    background-color: black;
+}
+
+
+.footer{
+    margin-top:100px;
+    border:1px solid black;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer1 li {
+    font-size: 20px;
+    display:block;
+    color:white;
+    padding: 17px;
+    /* position: relative; */
+    /* top:5000px; */
+    margin-left:-550px;
+}
+
+
+.footer2 li{
+    font-size: 20px;
+    display:block;
+    color:white;
+    padding: 17px;
+    /* position: relative; */
+    /* top:5000px; */
+    margin-left:-900px;
+}
+
+.footer3 li{
+    font-size: 20px;
+    display:block;
+    color:white;
+    padding: 17px;
+    /* position: relative; */
+    /* top:5000px; */
+    margin-left:-1200px;
+}
+
+.footer4 li{
+
+    font-size: 20px;
+    display:block;
+    color:white;
+    padding: 17px;
+    /* position: relative; */
+    /* top:5000px; */
+    margin-left:-1530px;
+}
+.footer a{
+    text-decoration: none;
+    
+}
+.footer a:hover{
+    color:orange;
+}
+
+.copy-rights{
+    border:1px solid black;
+    background-color: black;
+    margin-top: 0px;
+}
+.text-rights{
+    padding-left:650px;
+    color:white;
+    font-size: 17px;
+    font-weight: 100px;
+}
+hr{
+
+    width:1350px;
+    border-color:grey;
+}
+.social-media{
+    padding-left: 1100px;
+    display: flex;
+
+}
+.drop-down{
+    display: none;
+}
+.drop-down-menu {
+    display:none;
+    position: absolute;
+    z-index: 1;
+}
+
+.intersts:hover menu{
+    z-index: 1;
+    display: block;
+}
+
+
+.dropdown:hover .drop-down-menu{
+    display: block;
+}
+
+.drop-down-menu >li{
+    display: block !important;
+    margin-left: -420px;
+    padding-top: 23px;
+    
+}
+body{
+    overflow-x:hidden;
+}

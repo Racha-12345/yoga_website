@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"content="width=device-width,initial-scale=1.0">
+<title>Yoga</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Pattaya&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Lugrasimo&family=Pattaya&display=swap" rel="stylesheet">
+<style>
+.title1{
+font-family:'newsreader',serif;
+color:#8E8E8E;
+position: absolute;
+left:15px;
+}    
+.serve{
+display: none;
+position:absolute;
+left: 1000px;
+z-index: 100;
+border: 0.2px solid black;
+}
+.serve{
+padding:2px;
+margin-left:100px;
+margin-top:-10px;
+position:sticky;
+z-index:100;
+background-color:powderblue;
+}
+.drop2:hover .serve{
+display:block;
+position:absolute;
+left:800px;
+top:60px;
+}
+nav{
+display: flex;
+justify-content: center;
+align-items: center;
+padding:5px 15px; 
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+a{
+text-decoration: none;
+color:#8E8E8E;
+margin-left:55px; 
+font-size:15px;
+}
+.li1,.drop1{
+display: inline;
+color:black;
+}          
+button {
+outline: none;
+cursor: pointer;
+border: none;
+padding: 0.9rem 2rem;
+margin: 0;
+font-family: inherit;
+font-size: inherit;
+position: relative;
+display: inline-block;
+letter-spacing: 0.05rem;
+font-weight: 700;
+font-size: 17px;
+border-radius: 500px;
+overflow: hidden;
+background:orange;
+color: ghostwhite;
+margin-left:770px;
+margin-top:-15px;
+}
+button span {
+position: relative;
+z-index: 10;
+transition: color 0.4s;
+}
+button:hover span {
+color: black;
+}
+button::before,
+button::after {
+position: absolute;
+top:0px;
+left:0px;
+width: 100%;
+height: 100%;
+z-index: 0;
+}
+button::before {
+content: "";
+background:orange;
+width: 120%;
+left: -10%;
+transform: skew(30deg);
+transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1)
+color:orange;
+}
+button:hover::before {
+transform: translate3d(100%, 0, 0);
+}
+.serve li{
+list-style-type: none;
+}
+
+.main{
+font-size:60px;
+margin-left:450px;
+font-family: "Pattaya", serif;
+}
+.work{
+font-size:40px;
+color:powder blue; 
+font-family: "Cutive Mono", monospace;
+}
+p{
+font-size:20px;
+margin-left:40px;
+margin-top:-500px;
+}
+.img{
+width:500px;
+height:350px;
+margin-top:200px;
+margin-left:700px;
+}
+.form{
+border:2px solid grey;
+width:450px;
+height:400px;
+padding:10px;
+position:relative;
+left:150px;
+top:20px;
+font-size:20px;
+}
+.quotes{
+position:relative;
+left:200px;
+}
+
+
+
+footer {
+    background-color:black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 0px;
+}
+.lastclass {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    max-width: 85%;
+    margin: 0 auto;
+    padding-bottom: 0px;
+}
+.contact, .items, .followus {
+    flex: 1; 
+    margin: 10px; 
+    min-width: 200px; 
+}
+.contact p {
+margin: 5px 0; 
+}
+.items a, .followus a {
+    display: inline-block;
+    margin: 5px;
+    color: #fff; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+.followus a i {
+font-size: 24px;
+}
+.copy{
+margin-left:-100px;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+<nav class="mainnav">   
+<h1 class="title1">YOGA MOVEMENT</h1>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ul class="mainul">
+<li class="li1"><a href="#"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;HOME</a></li>
+<li class="li1"><a href="#"><i class="fa-sharp fa-solid fa-circle-info"></i>&nbsp;&nbsp;ABOUT</a></li>
+<li class="drop1"><a href="#">TRAINING&nbsp;&&nbsp;COURSES&nbsp;&nbsp;</a>
+</li>
+<li class="li1 drop2"><a href="#">SERVICES&nbsp;&nbsp;<i class="fa fa-angle-down"></i></a>
+<ul class="serve">
+<li><a href="#"><b>ONLINE</b></a></li>
+<li><a href="#"><b>OFFLINE</b></a></li>
+</ul>
+</li>
+<li class="li1"><a href="#">BLOG</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<li class="li1 register1">
+<button> <span>Register Now</span>
+</button></li>
+</ul>
+</nav>
+
+<h1 class="main">Yoga Services</h1>
+<img src="https://images.pexels.com/photos/268134/pexels-photo-268134.jpeg?auto=compress&cs=tinysrgb&w=400" width=1400px; height=500px;>
+<h2 class="work">Workshops & Retreats</h2>
+<img src="https://www.yogaprasad.in/wp-content/uploads/2020/01/20200101_173612-1536x988.jpg" class="img">
+<p>Yoga is a multi-dimensional practice and needs to be taught as a whole and not as a part, keeping this in mind, yoga<br>workshops and retreats fall under a broad umbrella of four heads covering all aspects of Yoga. Workshops usually are half day or full day and residential retreats are anywhere between 2 to 5 days.</p>
+<div class="form">
+<form>
+<th><b>Physical aspect of Yoga</b></th>
+<hr>
+<td>Under this section workshops encompassing the physical aspects,anatomyphysiology, movement and functional mechanics are covered. Some topics on which delivers workshops are</td>
+<br><br>
+<ul type="disc">
+<li>Posture correction through Asana</li>
+<li>Lower back, Neck, Knee and Shoulder management</li>
+<li>Functional Anatomy tutorials</li>
+<li>Movement mechanics in Asana</li>
+<li>Stability and Mobility</li>
+<li>Breath and Prana, and so on.</li>
+</ul>
+</form>
+</div>
+<br><br>
+<div class="quotes">
+<h2><b>1.“Yoga is a light, which once lit will never dim. The better your practice, the brighter your flame.”</b></h2> 
+<img src="https://bod-blog-assets.prod.cd.beachbodyondemand.com/bod-blog/wp-content/uploads/2018/06/1.jpg" width:100px;>
+<h2><b>2.“Yoga takes you into the present moment, the only place where life exists.”</b></h2>
+<img src="https://bod-blog-assets.prod.cd.beachbodyondemand.com/bod-blog/wp-content/uploads/2018/06/26144002/yoga-quotes-patanjali.png">
+</div>
+
+
+<footer>
+<div class="lastclass">
+<div class="items">
+                    <a href="home.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="training and courses.html">Training and Courses</a>
+                    <a href="services.html">Services</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contactus.html">Contact Us</a> 
+</div>
+<div class="followus">
+                    <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="x.com>"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="telegram.com"><i class="fa-brands fa-telegram"></i></a>
+</div>
+<div class="contact">
+<p><b>phone:</b>+91-9392388544</p>
+<p><b>email:</b>yogamovement@gmail.com</p>
+</div>
+<p class="copy"> © 2024 Yoga With Adriene, LLC  </p>
+</div>
+</footer>               
+
+</body>
+</html>
